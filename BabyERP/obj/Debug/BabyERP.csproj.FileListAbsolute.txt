@@ -29,6 +29,6 @@ c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\bin\BabyER
 c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\bin\BabyERP.pdb
 c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\obj\Debug\BabyERP.csprojResolveAssemblyReference.cache
 c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\obj\Debug\BabyERP.dll
 c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\obj\Debug\BabyERP.pdb
+c:\users\jpvlax\documents\visual studio 2017\Projects\BabyERP\BabyERP\obj\Debug\BabyERP.csprojResolveAssemblyReference.cache

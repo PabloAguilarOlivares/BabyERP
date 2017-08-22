@@ -188,3 +188,7 @@
 <!-- /Modal nuevo -->
 </asp:Content>
 
+<asp:Content ID="ContentScriptPage" ContentPlaceHolderID="ContentScriptPages" Runat="Server">
+    <!-- Scripts de paginas -->
+    <script src="../build/js/perfiles.js"></script>
+</asp:Content>

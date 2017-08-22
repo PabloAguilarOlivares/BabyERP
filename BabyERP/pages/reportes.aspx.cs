@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BabyERP
+namespace BabyERP.pages
 {
-    public partial class perfiles : System.Web.UI.Page
+    public partial class reportes : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
