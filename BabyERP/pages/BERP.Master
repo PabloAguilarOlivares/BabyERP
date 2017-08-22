@@ -65,11 +65,12 @@
                                   </li>
                                   <li>
                                       <a>
-                                          <i class="fa fa-edit"></i> Modulo 2 <span class="fa fa-chevron-down"></span>
+                                          <i class="fa fa-edit"></i> Compras <span class="fa fa-chevron-down"></span>
                                       </a>
                                       <ul class="nav child_menu">
-                                          <li><a href="#">Sección 1</a></li>
-                                          <li><a href="#">Sección 2</a></li>
+                                          <li><a href="realizar_compras.aspx">Realizar Compras</a></li>
+                                          <li><a href="proveedores.aspx">Proveedores</a></li>
+                                          <li><a href="reportes.aspx">Reportes</a></li>
                                       </ul>
                                   </li>
                                   <li>

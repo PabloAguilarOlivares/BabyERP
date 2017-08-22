@@ -315,6 +315,7 @@
     <Content Include="build\js\perfiles.js" />
     <Content Include="Default.aspx" />
     <Content Include="pages\index.aspx" />
+    <Content Include="pages\compra.aspx" />
     <Content Include="pages\perfiles.aspx" />
     <Content Include="vendors\animate.css\animate.css" />
     <Content Include="vendors\animate.css\animate.min.css" />
@@ -762,6 +763,13 @@
     </Compile>
     <Compile Include="pages\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\compra.aspx.cs">
+      <DependentUpon>compra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\compra.aspx.designer.cs">
+      <DependentUpon>compra.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\perfiles.aspx.cs">
       <DependentUpon>perfiles.aspx</DependentUpon>
