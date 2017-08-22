@@ -65,7 +65,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="build\js\proveedores.js" />
     <Content Include="packages.config" />
+    <Content Include="pages\compras.aspx" />
+    <Content Include="pages\proveedores.aspx" />
+    <Content Include="pages\reportes.aspx" />
     <Content Include="vendors\animate.css\.bower.json" />
     <Content Include="vendors\animate.css\animate-config.json" />
     <Content Include="vendors\animate.css\bower.json" />
@@ -315,7 +319,6 @@
     <Content Include="build\js\perfiles.js" />
     <Content Include="Default.aspx" />
     <Content Include="pages\index.aspx" />
-    <Content Include="pages\compra.aspx" />
     <Content Include="pages\perfiles.aspx" />
     <Content Include="vendors\animate.css\animate.css" />
     <Content Include="vendors\animate.css\animate.min.css" />
@@ -757,6 +760,13 @@
     <Compile Include="pages\BERP.Master.designer.cs">
       <DependentUpon>BERP.Master</DependentUpon>
     </Compile>
+    <Compile Include="pages\compras.aspx.cs">
+      <DependentUpon>compras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\compras.aspx.designer.cs">
+      <DependentUpon>compras.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -764,12 +774,12 @@
     <Compile Include="pages\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\compra.aspx.cs">
-      <DependentUpon>compra.aspx</DependentUpon>
+    <Compile Include="pages\proveedores.aspx.cs">
+      <DependentUpon>proveedores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\compra.aspx.designer.cs">
-      <DependentUpon>compra.aspx</DependentUpon>
+    <Compile Include="pages\proveedores.aspx.designer.cs">
+      <DependentUpon>proveedores.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\perfiles.aspx.cs">
       <DependentUpon>perfiles.aspx</DependentUpon>
@@ -777,6 +787,13 @@
     </Compile>
     <Compile Include="pages\perfiles.aspx.designer.cs">
       <DependentUpon>perfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\reportes.aspx.cs">
+      <DependentUpon>reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\reportes.aspx.designer.cs">
+      <DependentUpon>reportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

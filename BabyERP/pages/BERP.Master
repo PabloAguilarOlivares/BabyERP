@@ -68,7 +68,7 @@
                                           <i class="fa fa-edit"></i> Compras <span class="fa fa-chevron-down"></span>
                                       </a>
                                       <ul class="nav child_menu">
-                                          <li><a href="realizar_compras.aspx">Realizar Compras</a></li>
+                                          <li><a href="compras.aspx">Compras</a></li>
                                           <li><a href="proveedores.aspx">Proveedores</a></li>
                                           <li><a href="reportes.aspx">Reportes</a></li>
                                       </ul>
@@ -160,7 +160,10 @@
     <script src="../vendors/jquery-confirm/dist/jquery-confirm.min.js"></script>
     <!-- Scripts customizados -->
     <script src="../build/js/custom.js"></script>
-    <!-- Scripts de paginas -->
-    <script src="../build/js/perfiles.js"></script>
+
+    <asp:ContentPlaceHolder id="ContentScriptPages" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
 </body>
 </html>
