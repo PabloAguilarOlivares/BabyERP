@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BERP.master.cs" Inherits="BabyERP.pages.BERP" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Baby ERP</title>
+    <!-- Isotipo -->
+    <link rel="icon" href="../build/images/favicon-cubes.ico"/>
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+    <!-- Switchery -->
+    <link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet"/>
+    <!-- jquery-confirm -->
+    <link href="../vendors/jquery-confirm/dist/jquery-confirm.min.css" rel="stylesheet"/>
+    <!-- Hoja de estilo personalizada -->
+    <link href="../build/css/custom.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+             <div class="col-md-3 left_col">
+                 <div class="left_col scroll-view">
+                     <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.aspx" class="site_title"><i class="fa fa-cubes"></i> <span>Baby ERP!</span></a>
+                    </div>
+                     <div class="clearfix"></div>
+                     <!-- menu usuario información-->
+                     <div class="profile clearfix">
+                         <div class="profile_pic">
+                             <img src="../build/images/user1.png" alt="..." class="img-circle profile_img"/>
+                         </div>
+                         <div class="profile_info">
+                            <span>Bienvenido,</span>
+                            <h2>Administrador</h2>
+                         </div>
+                         <div class="clearfix"></div>
+                     </div>
+                     <!-- menu usuario información -->
+                     <br />
+                     <!-- menu lateral -->
+                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                          <div class="menu_section">
+                              <h3>MENÚ</h3>
+                              <ul class="nav side-menu">
+                                  <li>
+                                      <a>
+                                          <i class="fa fa-wrench"></i> Usuarios y perfiles <span class="fa fa-chevron-down"></span>
+                                      </a>
+                                      <ul class="nav child_menu">
+                                          <li><a href="perfiles.aspx">Mantenedor de perfiles</a></li>
+                                          <li><a href="#">Sección 2</a></li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a>
+                                          <i class="fa fa-edit"></i> Modulo 2 <span class="fa fa-chevron-down"></span>
+                                      </a>
+                                      <ul class="nav child_menu">
+                                          <li><a href="#">Sección 1</a></li>
+                                          <li><a href="#">Sección 2</a></li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a>
+                                          <i class="fa fa-desktop"></i> Modulo 2 <span class="fa fa-chevron-down"></span>
+                                      </a>
+                                      <ul class="nav child_menu">
+                                          <li><a href="#">Sección 1</a></li>
+                                          <li><a href="#">Sección 2</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </div>
+                     </div>
+                     <!-- /botones menu footer -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Pantalla completa">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Ajustes">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Bloquear">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Salir" href="../Default.aspx">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>            
+                    </div>
+                    <!-- /menu footer buttons -->
+                 </div>
+             </div>
+             <!-- top navegación -->
+             <div class="top_nav">
+                 <div class="nav_menu">
+                     <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="../build/images/user1.png" alt=""/>Administrador
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="../Default.aspx"><i class="fa fa-sign-out pull-right"></i> Salir</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                     </nav>
+                 </div>
+             </div>
+            <!-- /top navegación -->
+            <!-- contenido de las paginas -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- /contenido de las paginas -->
+            <!-- contenido del footer -->
+             <footer>
+                <div class="pull-right">
+                     Baby ERP - Sitio diseñado para el módulo TDS 2017 <a href="http://www.aiep.cl">AIEP</a>
+                </div>
+                <div class="clearfix"></div>
+             </footer>
+            <!-- / contenido del footer -->
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+     <script src="../vendors/parsleyjs/dist/i18n/es.js"></script>
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Jquery-confirm -->
+    <script src="../vendors/jquery-confirm/dist/jquery-confirm.min.js"></script>
+    <!-- Scripts customizados -->
+    <script src="../build/js/custom.js"></script>
+    <!-- Scripts de paginas -->
+    <script src="../build/js/perfiles.js"></script>
+</body>
+</html>
